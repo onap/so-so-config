@@ -1,0 +1,5 @@
+<% require 'json' %> 
+<% asdc_connections={"asdc-connections" => @allAsdcConnections, "mso.properties.reload.time.minutes" => 2} %>
+ 
+<%= JSON.pretty_generate(asdc_connections) %> 
+

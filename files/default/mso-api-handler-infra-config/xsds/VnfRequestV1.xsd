@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!--
+                =========================================================================
+                AT&T Proprietary (Internal Use Only) Not for use or disclosure outside
+                the AT&T companies except under written agreement (c) 2015 AT&T
+                Intellectual Property. All rights reserved. AT&T and the AT&T logo are
+                trademarks of AT&T Intellectual Property.
+                =======================================================================
+        -->
+        <!--
+                ================================================================
+                Description: This is the schema for representing GetLayer3ServiceDetails Request
+
+                ================================================================
+                Change Log:
+                Version Date        Comments
+                ======  =======     ========
+                0.10    2014-01-16. First draft
+
+                ================================================================
+        -->
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:tns="http://ecomp.att.com/mso/infra/vnf-request/v1"
+        targetNamespace="http://ecomp.att.com/mso/infra/vnf-request/v1"
+        elementFormDefault="qualified">
+
+
+     <element name="vnf-request">
+        <complexType>
+                        <sequence>
+                                        <element ref="tns:request-info" />
+                                        <element ref="tns:vnf-inputs" />
+
+                                        <element name="vnf-params" type="anyType" minOccurs="0" maxOccurs="1" />
+                                        <element ref="tns:vnf-outputs" minOccurs="0" maxOccurs="1"/>
+                        </sequence>
+                </complexType>
+    </element>
+      <element name="request-info">
+        <complexType>
+                        <sequence>
+                                <element name="request-id" type="string" minOccurs="0" maxOccurs="1" />
+                                <element name="action" type="tns:action-type" minOccurs="1" maxOccurs="1" />
+                                <element name="request-status" type="tns:request-status-type" minOccurs="0" maxOccurs="1" />
+                                <element name="status-message" type="string" minOccurs="0" maxOccurs="1" />
+                                <element name="progress" type="int" minOccurs="0" maxOccurs="1" />
+                                <element name="start-time" type="string" minOccurs="0" maxOccurs="1" />
+                                <element name="end-time" type="string" minOccurs="0" maxOccurs="1" />
+                                <element name="source" type="string" minOccurs="0" maxOccurs="1" />
+                        </sequence>
+                </complexType>
+    </element>
+
+        <element name="vnf-inputs">
+        <complexType>
+                        <sequence>
+                                <element name="vnf-id" type="string" minOccurs="1" maxOccurs="1" />
+                                <element name="vnf-name" type="string" minOccurs="1" maxOccurs="1" />
+
+                                <element name="vnf-type" type="string" minOccurs="1" maxOccurs="1" />
+                                <element name="service-type" type="string" minOccurs="0" maxOccurs="1" />
+                                <element name="aic-node-clli" type="string" minOccurs="1" maxOccurs="1" />
+                                <element name="tenant-id" type="string" minOccurs="1" maxOccurs="1" />
+                                <element name="prov-status" type="string" minOccurs="1" maxOccurs="1" />
+                        </sequence>
+                </complexType>
+    </element>
+
+    <element name="vnf-outputs">
+        <complexType>
+                        <sequence>
+                                <element name="vnf-id" type="string" minOccurs="1" maxOccurs="1" />
+                                <element name="vnf-name" type="string" minOccurs="1" maxOccurs="1" />
+                                <element name="aic-node-clli" type="string" minOccurs="1" maxOccurs="1" />
+                                <element name="tenant-id" type="string" minOccurs="1" maxOccurs="1" />
+
+                        </sequence>
+                </complexType>
+    </element>
+     <simpleType name="action-type">
+                <restriction base="string">
+                        <enumeration value="CREATE" />
+                        <enumeration value="SETSTATUS" />
+                        <enumeration value="REPLACE" />
+                        <enumeration value="UPDATE" />
+                        <enumeration value="DELETE" />
+                </restriction>
+        </simpleType>
+
+        <simpleType name="request-status-type">
+                <restriction base="string">
+                        <enumeration value="COMPLETE" />
+                        <enumeration value="FAILED" />
+                        <enumeration value="IN_PROGRESS" />
+                </restriction>
+        </simpleType>
+
+        <simpleType name="service-type">
+                <restriction base="string">
+                        <enumeration value="SDN-ETHERNET-INTERNET" />
+                </restriction>
+        </simpleType>
+ </schema>

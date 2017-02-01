@@ -1,0 +1,34 @@
+{
+  "cloud_config":
+  {
+    "identity_services":
+    {
+      <% @var["identity_services"].each_with_index do |item,count| %>
+        "<%= item[:dcp_clli] %>":
+        {
+          "identity_url": "<%= item[:identity_url] %>",
+          "mso_id": "<%= item[:mso_id] %>",
+          "mso_pass": "<%= item[:mso_pass] %>",
+          "admin_tenant": "<%= item[:admin_tenant] %>",
+          "member_role": "<%= item[:member_role] %>",
+          "tenant_metadata": <%= item[:tenant_metadata] %>,
+          "identity_server_type": "<%= item[:identity_server_type] %>",
+          "identity_authentication_type": "<%= item[:identity_authentication_type] %>"
+        }<%= ',' if count < (@var["identity_services"].size - 1) %>
+        <% end %>
+    },
+    "cloud_sites":
+    {
+      <% @var["cloud_sites"].each_with_index do |item,count| %>
+        "<%= item[:id] %>":
+        {
+          "region_id": "<%= item[:region_id] %>",
+          "clli": "<%= item[:lcp_clli] %>",
+          "aic_version": "<%= item[:aic_version] %>",
+          "identity_service_id": "<%= item[:identity_service_id] %>"   
+        }<%= ',' if count < (@var["cloud_sites"].size - 1) %>
+      <% end %>
+    }
+  }
+}
+
