@@ -9,7 +9,6 @@
     owner "jboss"
     group "jboss"
     mode "0755"
-    recursive true
     action :create
   end
 end

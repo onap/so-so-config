@@ -4,6 +4,14 @@
 node.default['mso_config_path'] = '/opt/mso/etc/ecomp/mso/config'
 
 ######################
+# AFT
+##########
+#https://wiki.web.att.com/pages/viewpage.action?pageId=85196962
+node.default["aft"]["latitude"] = ""
+node.default["aft"]["longitude"] = ""
+node.default["aft"]["environment"] = "" # AFTUAT || AFTPRD
+
+######################
 # APIH INFRA
 ##########
 node.default["mso-api-handler-infra-config"]["bpelURL"] = "DefaultRecipe_bpelURL"
@@ -20,8 +28,6 @@ node.default["mso-api-handler-infra-config"]["network.v3.ApiAllowableActions"] =
 node.default["mso-api-handler-infra-config"]["volume.v1.ApiAllowableActions"] = ""
 node.default["mso-api-handler-infra-config"]["volume.v2.ApiAllowableActions"] = "DELETE_VF_MODULE_VOL,UPDATE_VF_MODULE_VOL"
 node.default["mso-api-handler-infra-config"]["volume.v3.ApiAllowableActions"] = "CREATE_VF_MODULE_VOL,DELETE_VF_MODULE_VOL,UPDATE_VF_MODULE_VOL"
-
-
 
 ######################
 # JRA
@@ -152,12 +158,46 @@ node.default["mso-bpmn-urn-config"]["logDebugDeleteServiceInstanceInfra"] = "fal
 node.default["mso-bpmn-urn-config"]["logDebugCreateNetworkInstanceInfra"] = "false"
 node.default["mso-bpmn-urn-config"]["logDebugDeleteNetworkInstanceInfra"] = "false"
 node.default["mso-bpmn-urn-config"]["logDebugUpdateNetworkInstanceInfra"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugCreateNetworkInstance"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugDoCreateNetworkInstance"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugDoCreateNetworkInstanceRollback"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugDeleteNetworkInstance"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugDoDeleteNetworkInstance"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugDoDeleteNetworkInstanceRollback"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugCreateViprAtmService"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugDeleteViprAtmService"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugGenericGetService"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugGenericPutService"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugGenericDeleteService"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugCreateServiceInstance"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugDelServiceInstance"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugRollbackServiceInstance"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugDoCreateServiceInstanceRollback"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugDoDeleteServiceInstance"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugDoCreateVfModuleVolumeRollback"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugDoDeleteVfModuleVolumeRollback"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugDoDeleteVfModuleVolumeV1"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugDoCreateVfModuleVolumeV1"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugVPECreateVfModule"] = "false"
+node.default["mso-bpmn-urn-config"]["logDebugDHVCreateService"] = "DefaultRecipe_logDebugDHVCreateService"
+node.default["mso-bpmn-urn-config"]["logDebugSNIROAdapter"] = "DefaultRecipe_logDebugSNIROAdapter"
+node.default["mso-bpmn-urn-config"]["logDebugDHVActivateService"] = "false"
+node.default["mso-bpmn-urn-config"]["infraCustomerId"] = "DefaultRecipe_infraCustomerId"
+node.default["mso-bpmn-urn-config"]["sniroAuth"] = "test:testpwd"
+node.default["mso-bpmn-urn-config"]["sniroCallback"] = "DefaultRecipe_sniroCallback"
+node.default["mso-bpmn-urn-config"]["sniroEndpoint"] = "DefaultRecipe_sniroEndpoint"
+node.default["mso-bpmn-urn-config"]["sniroTimeout"] = "DefaultRecipe_sniroTimeout"
+node.default["mso-bpmn-urn-config"]["sniroPoliciesDHV2vvig"] = "DefaultRecipe_sniroPoliciesDHV2vvig"
+node.default["mso-bpmn-urn-config"]["sniroPoliciesDHV4vvig"] = "DefaultRecipe_sniroPoliciesDHV4vvig"
+node.default["mso-bpmn-urn-config"]["catalogDbEndpoint"] = "DefaultRecipe_catalogDbEndpoint"
 node.default["mso-bpmn-urn-config"]["aaiEndpoint"] = "DefaultRecipe_sdncauth"
 node.default["mso-bpmn-urn-config"]["adaptersCompletemsoprocessEndpoint"] = "DefaultRecipe_sdncconnecttime"
 node.default["mso-bpmn-urn-config"]["adaptersDbEndpoint"] = "DefaultRecipe_adaptersDbEndpoint"
 node.default["mso-bpmn-urn-config"]["adaptersSdncEndpoint"] = "DefaultRecipe_adaptersSdncEndpoint"
+node.default["mso-bpmn-urn-config"]["adaptersSdncRestEndpoint"] = "DefaultRecipe_adaptersSdncRestEndpoint"
 node.default["mso-bpmn-urn-config"]["adaptersTenantEndpoint"] = "DefaultRecipe_adaptersTenantEndpoint"
-node.default["mso-bpmn-urn-config"]["workflowSdncadapterCallback"] = "DefaultRecipe_workflowSdncadapterCallback"
+node.default["mso-bpmn-urn-config"]["workflowMessageEndpoint"] = "DefaultRecipe_workflowMessageEndpoint"
+node.default["mso-bpmn-urn-config"]["workflowSdncAdapterCallback"] = "DefaultRecipe_workflowSdncAdapterCallback"
 node.default["mso-bpmn-urn-config"]["msoKey"] = "DefaultRecipe_msoKey"
 node.default["mso-bpmn-urn-config"]["sdncPassword"] = "DefaultRecipe_sdncPassword"
 node.default["mso-bpmn-urn-config"]["adaptersPoAuth"] = "DefaultRecipe_adaptersPoAuth"
@@ -169,7 +209,6 @@ node.default["mso-bpmn-urn-config"]["adaptersVnfAsyncEndpoint"] = "DefaultRecipe
 node.default["mso-bpmn-urn-config"]["workflowVnfAdapterDeleteCallback"] = "DefaultRecipe_workflowVnfAdapterDeleteCallback"
 node.default["mso-bpmn-urn-config"]["workflowVnfAdapterCreateCallback"] = "DefaultRecipe_workflowVnfAdapterCreateCallback"
 node.default["mso-bpmn-urn-config"]["adaptersVnfRestEndpoint"] = "DefaultRecipe_adaptersVnfRestEndpoint"
-node.default["mso-bpmn-urn-config"]["workflowVnfAdapterRestCallback"] = "DefaultRecipe_workflowVnfAdapterRestCallback"
 node.default["mso-bpmn-urn-config"]["adaptersPoPassword"] = "DefaultRecipe_adaptersPoPassword"
 node.default["mso-bpmn-urn-config"]["poTimeout"] = "DefaultRecipe_poTimeout"
 node.default["mso-bpmn-urn-config"]["sdncFirewallYangModel"] = "DefaultRecipe_sdncFirewallYangModel"
@@ -180,40 +219,39 @@ node.default["mso-bpmn-urn-config"]["callbackRetrySleepTime"] = "1000"
 node.default["mso-bpmn-urn-config"]["useQualifiedHost"] = "false"
 node.default["mso-bpmn-urn-config"]["workflowL3ToHigherLayerAddBondingModelName"] = "WAN Bonding v0.1"
 node.default["mso-bpmn-urn-config"]["workflowL3ToHigherLayerAddBondingModelVersion"] = "0.1"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAINetworkGenericVnfUri"] = "/aai/v3/network/generic-vnfs/generic-vnf"
-node.default["mso-bpmn-urn-config"]["workflowDoCreateVfModuleVolumeV1AAINetworkGenericVnfUri"] = "/aai/v8/network/generic-vnfs/generic-vnf"
-node.default["mso-bpmn-urn-config"]["workflowDeleteGenericVNFV1AAINetworkGenericVnfUri"] = "/aai/v6/network/generic-vnfs/generic-vnf"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAINetworkVpnBindingUri"] = "/aai/v6/network/vpn-bindings/vpn-binding"
-node.default["mso-bpmn-urn-config"]["workflowCreateNetworkV1AAINetworkVpnBindingUri"] = ""
-node.default["mso-bpmn-urn-config"]["workflowCreateNetworkV2AAINetworkVpnBindingUri"] = ""
-node.default["mso-bpmn-urn-config"]["workflowCreateNetworkInstanceInfraAAINetworkVpnBindingUri"] = "/aai/v8/network/vpn-bindings/vpn-binding"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAINetworkVceUri"] = "/aai/v2/network/vces/vce"
-node.default["mso-bpmn-urn-config"]["workflowDeleteVCEV1AAINetworkVceUri"] = ""
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAINetworkL3NetworkUri"] = "/aai/v8/network/l3-networks/l3-network"
-node.default["mso-bpmn-urn-config"]["workflowCreateNetworkV1AAINetworkL3NetworkUri"] = "/aai/v6/network/l3-networks/l3-network"
-node.default["mso-bpmn-urn-config"]["workflowDeleteNetworkV1AAINetworkL3NetworkUri"] = "/aai/v6/network/l3-networks/l3-network"
-node.default["mso-bpmn-urn-config"]["workflowCreateNetworkInstanceInfraAAINetworkL3NetworkUri"] = "/aai/v8/network/l3-networks/l3-network"
-node.default["mso-bpmn-urn-config"]["workflowDeleteNetworkInstanceInfraAAINetworkL3NetworkUri"] = "/aai/v8/network/l3-networks/l3-network"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIBusinessCustomerUri"] = "/aai/v6/business/customers/customer"
-node.default["mso-bpmn-urn-config"]["workflowCreateServiceInstanceInfraAAIBusinessCustomerUri"] = "/aai/v8/business/customers/customer"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAICloudInfrastructureVolumeGroupUri"] = "/aai/v6/cloud-infrastructure/volume-groups/volume-group"
-node.default["mso-bpmn-urn-config"]["workflowCreateNetworkV2AAINetworkVpnBindingUri"] = ""
-node.default["mso-bpmn-urn-config"]["workflowCreateNetworkV2AAINetworkPolicyUri"] = ""
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAICloudInfrastructureTenantUri"] = "/aai/v5/cloud-infrastructure/tenants/tenant"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAISearchGenericQueryUri"] = "/aai/v2/search/generic-query"
-node.default["mso-bpmn-urn-config"]["workflowCreateServiceInstanceInfraAAISearchGenericQueryUri"] = "/aai/v8/search/generic-query"
-node.default["mso-bpmn-urn-config"]["workflowUCPERemoveLayer3ServiceAAISearchGenericQueryUri"] = "/aai/v6/search/generic-query"
-node.default["mso-bpmn-urn-config"]["workflowCreateAAIVfModuleAAINetworkGenericVnfUri"] = "/aai/v8/network/generic-vnfs/generic-vnf"
-node.default["mso-bpmn-urn-config"]["workflowDeleteAAIVfModuleAAINetworkGenericVnfUri"] = "/aai/v8/network/generic-vnfs/generic-vnf"
-node.default["mso-bpmn-urn-config"]["workflowDoCreateVfModuleAAINetworkGenericVnfUri"] = "/aai/v8/network/generic-vnfs/generic-vnf"
-node.default["mso-bpmn-urn-config"]["workflowPrepareUpdateAAIVfModuleAAINetworkGenericVnfUri"] = "/aai/v8/network/generic-vnfs/generic-vnf"
-node.default["mso-bpmn-urn-config"]["workflowUpdateAAIVfModuleAAINetworkGenericVnfUri"] = "/aai/v8/network/generic-vnfs/generic-vnf"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAICloudInfrastructureCloudRegionUri"] = "/aai/v8/cloud-infrastructure/cloud-regions/cloud-region/att-aic"
-node.default["mso-bpmn-urn-config"]["workflowCreateNetworkInstanceInfraAAICloudInfrastructureCloudRegionUri"] = "/aai/v8/cloud-infrastructure/cloud-regions/cloud-region/att-aic"
-node.default["mso-bpmn-urn-config"]["workflowDoCreateVfModuleVolumeV1AAICloudInfrastructureCloudRegionUri"] = "/aai/v8/cloud-infrastructure/cloud-regions/cloud-region/att-aic"
-node.default["mso-bpmn-urn-config"]["workflowDeleteVfModuleVolumeInfraV1AAICloudInfrastructureCloudRegionUri"] = "/aai/v8/cloud-infrastructure/cloud-regions/cloud-region/att-aic"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAISearchNodesQueryUri"] = "/aai/v8/search/nodes-query"
-node.default["mso-bpmn-urn-config"]["workflowCreateAAIVfModuleVolumeGroupAaiNetworkGenericVnfUri"] = "/aai/v8/network/generic-vnfs/generic-vnf"
+
+##################################################################
+# To specify the default A&AI version to use for all resources:
+#    Use: workflowGlobalDefaultAAIVersion ------------------- Example: node.default["mso-bpmn-urn-config"]["workflowGlobalDefaultAAIVersion"] = "8"
+# To override the default A&AI version:
+#    Resource-specific: workflowDefaultAAI{Resource}Version - Example: node.default["mso-bpmn-urn-config"]["workflowDefaultAAIGenericVnfUriVersion"] = "7"
+#    Flow-specific: workflowCustom{SpecificFlow}AAIVersion -- Example: node.default["mso-bpmn-urn-config"]["workflowCustomCreateNetworkV1AAIVersion"] = "6"
+# To specify a version+resource URI:
+#    Use format: workflowDefaultAAI{Version}{Resource}Uri --- Example: node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8GenericVnfUri"] = "/aai/v8/network/generic-vnfs/generic-vnf"
+# To override URI for a specific flow+resource:
+#    Use format: workflow{SpecificFlow}{Resource}Uri -------- Example: node.default["mso-bpmn-urn-config"]["workflowCreateNetworkV1GenericVnfUri"] = "/aai/v9/network/generic-vnfs/generic-vnf"
+#
+# Lookup order (precedence): flow+resource specific (1st) -> flow-specific version -> resource-specific version -> default version (last)
+########################################################################################################################################################################################################
+node.default["mso-bpmn-urn-config"]["workflowGlobalDefaultAAIVersion"] = "8"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8GenericVnfUri"] = "/aai/v8/network/generic-vnfs/generic-vnf"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8VpnBindingUri"] = "/aai/v8/network/vpn-bindings/vpn-binding"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8VceUri"] = "/aai/v8/network/vces/vce"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8L3NetworkUri"] = "/aai/v8/network/l3-networks/l3-network"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8CustomerUri"] = "/aai/v8/business/customers/customer"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8NetworkPolicyUri"] = "/aai/v8/network/network-policies/network-policy"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8RouteTableReferenceUri"] = "/aai/v8/network/route-table-references/route-table-reference"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8TenantUri"] = "/aai/v8/cloud-infrastructure/cloud-regions/cloud-region/att-aic/AAIAIC25/tenants/tenant"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8GenericQueryUri"] = "/aai/v8/search/generic-query"
+#note the CloudRegionURI is used for volume-groups
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8CloudRegionUri"] = "/aai/v8/cloud-infrastructure/cloud-regions/cloud-region/att-aic"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8NodesQueryUri"] = "/aai/v8/search/nodes-query"
+#Override A&AI version for generic-vnf and cloud-region (for volume-groups)
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIGenericVnfUriVersion"] = "9"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV9GenericVnfUri"] = "/aai/v9/network/generic-vnfs/generic-vnf"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAICloudRegionUriVersion"] = "9"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV9CloudRegionUri"] = "/aai/v9/cloud-infrastructure/cloud-regions/cloud-region/att-aic"
+node.default["mso-bpmn-urn-config"]["workflowDHVCreateServiceAAICustomerUri"] = "/aai/v9/business/customers/customer"
 
 ######################
 # appc
