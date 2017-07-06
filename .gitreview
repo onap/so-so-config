@@ -1,4 +1,4 @@
 [gerrit]
 host=gerrit.onap.org
 port=29418
-project=mso/mso-config.git
+project=so/so-config.git

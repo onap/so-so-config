@@ -13,6 +13,7 @@ node.default["mso-bpmn-urn-config"]["sniroPoliciesDHV2vvig"] = "DefaultRecipe_sn
 node.default["mso-bpmn-urn-config"]["sniroPoliciesDHV4vvig"] = "DefaultRecipe_sniroPoliciesDHV4vvig"
 node.default["mso-bpmn-urn-config"]["catalogDbEndpoint"] = "DefaultRecipe_catalogDbEndpoint"
 node.default["mso-bpmn-urn-config"]["aaiEndpoint"] = "DefaultRecipe_sdncauth"
+node.default["mso-bpmn-urn-config"]["aaiAuth"] = "DefaultRecipe_aaiAuth"
 node.default["mso-bpmn-urn-config"]["csiNetworkstatusEndpoint"] = "DefaultRecipe_bpelauth"
 node.default["mso-bpmn-urn-config"]["adaptersCompletemsoprocessEndpoint"] = "DefaultRecipe_sdncconnecttime"
 node.default["mso-bpmn-urn-config"]["adaptersDbEndpoint"] = "DefaultRecipe_adaptersDbEndpoint"
@@ -61,6 +62,7 @@ node.default["mso-bpmn-urn-config"]["workflowL3ToHigherLayerAddBondingModelVersi
 # Lookup order (precedence): flow+resource specific (1st) -> flow-specific version -> resource-specific version -> default version (last)
 ########################################################################################################################################################################################################
 node.default["mso-bpmn-urn-config"]["workflowGlobalDefaultAAIVersion"] = "8"
+node.default["mso-bpmn-urn-config"]["workflowGlobalDefaultAAINamespace"] = "http://org.openecomp.aai.inventory/"
 node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8GenericVnfUri"] = "/aai/v8/network/generic-vnfs/generic-vnf"
 node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8VpnBindingUri"] = "/aai/v8/network/vpn-bindings/vpn-binding"
 node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8VceUri"] = "/aai/v8/network/vces/vce"

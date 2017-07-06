@@ -126,6 +126,7 @@ node.default["mso-po-adapter-config"]["tenant"]["org.openecomp.mso.adapters.tena
 # Lookup order (precedence): flow+resource specific (1st) -> flow-specific version -> resource-specific version -> default version (last)
 ########################################################################################################################################################################################################
 node.default["mso-bpmn-urn-config"]["workflowGlobalDefaultAAIVersion"] = "8"
+node.default["mso-bpmn-urn-config"]["workflowGlobalDefaultAAINamespace"] = "http://org.openecomp.aai.inventory/"
 node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8GenericVnfUri"] = "/aai/v8/network/generic-vnfs/generic-vnf"
 node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8VpnBindingUri"] = "/aai/v8/network/vpn-bindings/vpn-binding"
 node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8VceUri"] = "/aai/v8/network/vces/vce"
