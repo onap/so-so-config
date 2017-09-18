@@ -114,37 +114,33 @@ node.default["mso-po-adapter-config"]["tenant"]["org.openecomp.mso.adapters.tena
 
 ##################################################################
 # To specify the default A&AI version to use for all resources:
-#    Use: workflowGlobalDefaultAAIVersion ------------------- Example: node.default["mso-bpmn-urn-config"]["workflowGlobalDefaultAAIVersion"] = "8"
+#    Use: workflowGlobalDefaultAAIVersion ------------------- Example: node.default["mso-bpmn-urn-config"]["workflowGlobalDefaultAAIVersion"] = "11"
 # To override the default A&AI version:
-#    Resource-specific: workflowDefaultAAI{Resource}Version - Example: node.default["mso-bpmn-urn-config"]["workflowDefaultAAIGenericVnfUriVersion"] = "7"
-#    Flow-specific: workflowCustom{SpecificFlow}AAIVersion -- Example: node.default["mso-bpmn-urn-config"]["workflowCustomCreateNetworkV1AAIVersion"] = "6"
+#    Resource-specific: workflowDefaultAAI{Resource}Version - Example: node.default["mso-bpmn-urn-config"]["workflowDefaultAAIGenericVnfUriVersion"] = "10"
+#    Flow-specific: workflowCustom{SpecificFlow}AAIVersion -- Example: node.default["mso-bpmn-urn-config"]["workflowCustomCreateNetworkV1AAIVersion"] = "9"
 # To specify a version+resource URI:
-#    Use format: workflowDefaultAAI{Version}{Resource}Uri --- Example: node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8GenericVnfUri"] = "/aai/v8/network/generic-vnfs/generic-vnf"
+#    Use format: workflowDefaultAAI{Version}{Resource}Uri --- Example: node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11GenericVnfUri"] = "/aai/v11/network/generic-vnfs/generic-vnf"
 # To override URI for a specific flow+resource:
-#    Use format: workflow{SpecificFlow}{Resource}Uri -------- Example: node.default["mso-bpmn-urn-config"]["workflowCreateNetworkV1GenericVnfUri"] = "/aai/v9/network/generic-vnfs/generic-vnf"
+#    Use format: workflow{SpecificFlow}{Resource}Uri -------- Example: node.default["mso-bpmn-urn-config"]["workflowCreateNetworkV1GenericVnfUri"] = "/aai/v10/network/generic-vnfs/generic-vnf"
 #
 # Lookup order (precedence): flow+resource specific (1st) -> flow-specific version -> resource-specific version -> default version (last)
 ########################################################################################################################################################################################################
-node.default["mso-bpmn-urn-config"]["workflowGlobalDefaultAAIVersion"] = "8"
+node.default["mso-bpmn-urn-config"]["workflowGlobalDefaultAAIVersion"] = "11"
 node.default["mso-bpmn-urn-config"]["workflowGlobalDefaultAAINamespace"] = "http://org.openecomp.aai.inventory/"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8GenericVnfUri"] = "/aai/v8/network/generic-vnfs/generic-vnf"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8VpnBindingUri"] = "/aai/v8/network/vpn-bindings/vpn-binding"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8VceUri"] = "/aai/v8/network/vces/vce"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8L3NetworkUri"] = "/aai/v8/network/l3-networks/l3-network"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8CustomerUri"] = "/aai/v8/business/customers/customer"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8NetworkPolicyUri"] = "/aai/v8/network/network-policies/network-policy"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8RouteTableReferenceUri"] = "/aai/v8/network/route-table-references/route-table-reference"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8TenantUri"] = "/aai/v8/cloud-infrastructure/cloud-regions/cloud-region/att-aic/AAIAIC25/tenants/tenant"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8GenericQueryUri"] = "/aai/v8/search/generic-query"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11GenericVnfUri"] = "/aai/v11/network/generic-vnfs/generic-vnf"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11VpnBindingUri"] = "/aai/v11/network/vpn-bindings/vpn-binding"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11VceUri"] = "/aai/v11/network/vces/vce"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11L3NetworkUri"] = "/aai/v11/network/l3-networks/l3-network"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11CustomerUri"] = "/aai/v11/business/customers/customer"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11NetworkPolicyUri"] = "/aai/v11/network/network-policies/network-policy"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11RouteTableReferenceUri"] = "/aai/v11/network/route-table-references/route-table-reference"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11TenantUri"] = "/aai/v11/cloud-infrastructure/cloud-regions/cloud-region/Rackspace/DFW/tenants/tenant"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11GenericQueryUri"] = "/aai/v11/search/generic-query"
 #note the CloudRegionURI is used for volume-groups
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8CloudRegionUri"] = "/aai/v8/cloud-infrastructure/cloud-regions/cloud-region/att-aic"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV8NodesQueryUri"] = "/aai/v8/search/nodes-query"
-#Override A&AI version for generic-vnf and cloud-region (for volume-groups)
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIGenericVnfUriVersion"] = "9"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV9GenericVnfUri"] = "/aai/v9/network/generic-vnfs/generic-vnf"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAICloudRegionUriVersion"] = "9"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV9CloudRegionUri"] = "/aai/v9/cloud-infrastructure/cloud-regions/cloud-region/att-aic"
-node.default["mso-bpmn-urn-config"]["workflowDHVCreateServiceAAICustomerUri"] = "/aai/v9/business/customers/customer"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11CloudRegionUri"] = "/aai/v11/cloud-infrastructure/cloud-regions/cloud-region/Rackspace"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11NodesQueryUri"] = "/aai/v11/search/nodes-query"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11GenericVnfUri"] = "/aai/v11/network/generic-vnfs/generic-vnf"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11CloudRegionUri"] = "/aai/v11/cloud-infrastructure/cloud-regions/cloud-region/Rackspace"
 
 ######################
 # appc
