@@ -15,6 +15,7 @@ node.default["mso-bpmn-urn-config"]["catalogDbEndpoint"] = "DefaultRecipe_catalo
 node.default["mso-bpmn-urn-config"]["aaiEndpoint"] = "DefaultRecipe_sdncauth"
 node.default["mso-bpmn-urn-config"]["aaiAuth"] = "DefaultRecipe_aaiAuth"
 node.default["mso-bpmn-urn-config"]["csiNetworkstatusEndpoint"] = "DefaultRecipe_bpelauth"
+node.default["mso-bpmn-urn-config"]["adaptersNamespace"] = "DefaultRecipe_adaptersNamespace"
 node.default["mso-bpmn-urn-config"]["adaptersCompletemsoprocessEndpoint"] = "DefaultRecipe_sdncconnecttime"
 node.default["mso-bpmn-urn-config"]["adaptersDbEndpoint"] = "DefaultRecipe_adaptersDbEndpoint"
 node.default["mso-bpmn-urn-config"]["adaptersSdncEndpoint"] = "DefaultRecipe_adaptersSdncEndpoint"
