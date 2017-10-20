@@ -18,6 +18,7 @@ node.default["mso-bpmn-urn-config"]["csiNetworkstatusEndpoint"] = "DefaultRecipe
 node.default["mso-bpmn-urn-config"]["adaptersNamespace"] = "DefaultRecipe_adaptersNamespace"
 node.default["mso-bpmn-urn-config"]["adaptersCompletemsoprocessEndpoint"] = "DefaultRecipe_sdncconnecttime"
 node.default["mso-bpmn-urn-config"]["adaptersDbEndpoint"] = "DefaultRecipe_adaptersDbEndpoint"
+node.default["mso-bpmn-urn-config"]["adaptersOpenecompDbEndpoint"] = "DefaultRecipe_adaptersOpenecompDbEndpoint"
 node.default["mso-bpmn-urn-config"]["adaptersSdncEndpoint"] = "DefaultRecipe_adaptersSdncEndpoint"
 node.default["mso-bpmn-urn-config"]["adaptersSdncRestEndpoint"] = "DefaultRecipe_adaptersSdncRestEndpoint"
 node.default["mso-bpmn-urn-config"]["adaptersTenantEndpoint"] = "DefaultRecipe_adaptersTenantEndpoint"
