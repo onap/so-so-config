@@ -2,7 +2,7 @@ require 'uri'
 ######################
 # MSO Config Path
 ##########
-node.default["mso-config"]["topology"]["apih-load-balancer"] = URI.join(node["mso-bpmn-urn-config"]["adaptersOpenecompDbEndpoint"], "/").to_s
+node.default["mso-config"]["topology"]["apih-load-balancer"] = URI.join(node["mso-bpmn-urn-config"]["adaptersDbEndpoint"], "/").to_s
 node.default["mso-config"]["topology"]["jra-load-balancer"] = URI.join(node["mso-bpmn-urn-config"]["adaptersSdncEndpoint"], "/").to_s
 node.default["mso-config"]["topology"]["camunda-load-balancer"] = URI.join(node["mso-api-handler-infra-config"]["camundaURL"], "/").to_s
 
