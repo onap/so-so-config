@@ -9,7 +9,8 @@ node.default["mso-config"]["topology"]["camunda-load-balancer"] = URI.join(node[
 node.default["mso-config"]["topology"]["site-name"] = node.chef_environment
 node.default["mso-config"]["topology"]["server-port"] = "8080"
 node.default["mso-config"]["topology"]["ssl-enable"] = "false"
-
+node.default["mso-config"]["topology"]["msb-server-ip"] = "127.0.0.1"
+node.default["mso-config"]["topology"]["msb-server-port"] = "8080"
 node.default["mso-config"]["topology"]["apih-healthcheck-urn"] = "/ecomp/mso/infra/healthcheck,/asdc/healthcheck,/dbadapters/healthcheck"
 node.default["mso-config"]["topology"]["jra-healthcheck-urn"] = "/networks/rest/healthcheck,/adapters/rest/healthcheck,/vnfs/rest/healthcheck,/tenants/rest/healthcheck"
 node.default["mso-config"]["topology"]["camunda-healthcheck-urn"] = "/mso/healthcheck,/mso/common/healthcheck"
