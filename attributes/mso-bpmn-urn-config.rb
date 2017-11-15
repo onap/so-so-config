@@ -71,13 +71,13 @@ node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11L3NetworkUri"] = "/aai
 node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11CustomerUri"] = "/aai/v11/business/customers/customer"
 node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11NetworkPolicyUri"] = "/aai/v11/network/network-policies/network-policy"
 node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11RouteTableReferenceUri"] = "/aai/v11/network/route-table-references/route-table-reference"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11TenantUri"] = "/aai/v11/cloud-infrastructure/cloud-regions/cloud-region/Rackspace/DFW/tenants/tenant"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11TenantUri"] = "/aai/v11/cloud-infrastructure/cloud-regions/cloud-region/CloudOwner/DFW/tenants/tenant"
 node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11GenericQueryUri"] = "/aai/v11/search/generic-query"
 #note the CloudRegionURI is used for volume-groups
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11CloudRegionUri"] = "/aai/v11/cloud-infrastructure/cloud-regions/cloud-region/Rackspace"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11CloudRegionUri"] = "/aai/v11/cloud-infrastructure/cloud-regions/cloud-region/CloudOwner"
 node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11NodesQueryUri"] = "/aai/v11/search/nodes-query"
 node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11GenericVnfUri"] = "/aai/v11/network/generic-vnfs/generic-vnf"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11CloudRegionUri"] = "/aai/v11/cloud-infrastructure/cloud-regions/cloud-region/Rackspace"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11CloudRegionUri"] = "/aai/v11/cloud-infrastructure/cloud-regions/cloud-region/CloudOwner"
 
 ##########
 # DEBUG defaults
