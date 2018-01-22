@@ -6,7 +6,7 @@ include_recipe 'mso-config::createConfigDirectories'
 ################
 # 
 ######
-['cloud_config.json','mso.vnf.properties','mso.network.properties','mso.tenant.properties'].each do |file|
+['cloud_config.json','mso.vnf.properties','mso.network.properties','mso.vfc.properties','mso.tenant.properties'].each do |file|
   template "#{node['mso_config_path']}#{file}" do
     source "mso-po-adapter-config/#{file}"
     owner "jboss"
