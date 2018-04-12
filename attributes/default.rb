@@ -27,6 +27,7 @@ node.default["mso-api-handler-infra-config"]["network.v3.ApiAllowableActions"] =
 node.default["mso-api-handler-infra-config"]["volume.v1.ApiAllowableActions"] = ""
 node.default["mso-api-handler-infra-config"]["volume.v2.ApiAllowableActions"] = "DELETE_VF_MODULE_VOL,UPDATE_VF_MODULE_VOL"
 node.default["mso-api-handler-infra-config"]["volume.v3.ApiAllowableActions"] = "CREATE_VF_MODULE_VOL,DELETE_VF_MODULE_VOL,UPDATE_VF_MODULE_VOL"
+node.default["mso-api-handler-infra-config"]["mso.workflow.default.resource.sequence"] = "underlay,overlay,epc,ims"
 
 ######################
 # JRA
