@@ -48,6 +48,17 @@ template "mso_asdc_json" do
   action :nothing 
 end
 
+template "mso_asdc_clients_properties" do 
+  path "#{ node['mso_config_path'] }/mso.asdc.clients.properties" 
+  source "mso-asdc-controller-config/mso.asdc.clients.properties"
+  owner "jboss" 
+  group "jboss" 
+  mode "0744" 
+  variables(
+    :var => node["mso-asdc-controller-config"]
+  )
+end
+
 remote_directory "#{node['mso_config_path']}" do
   source "mso-asdc-controller-config"
   #cookbook "default is current"
