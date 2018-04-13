@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "5a93c517_60d5dfe3",
+        "filename": "attributes/default.rb",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 879
+      },
+      "writtenOn": "2018-04-13T05:01:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a93c517_2c74b6fc",
+      "revId": "20752c6f0245342bb8e0f26faf61d415bf2bb7e7",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a93c517_4c71020b",
         "filename": "templates/default/mso-api-handler-infra-config/mso.apihandler-infra.properties",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2018-04-12T11:31:14Z",
       "side": 1,
       "message": "change to mso.workflow.custom.VolTE.resource.sequence",
+      "revId": "20752c6f0245342bb8e0f26faf61d415bf2bb7e7",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a93c517_40d8e31d",
+        "filename": "templates/default/mso-api-handler-infra-config/mso.apihandler-infra.properties",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 879
+      },
+      "writtenOn": "2018-04-13T05:01:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a93c517_4c71020b",
       "revId": "20752c6f0245342bb8e0f26faf61d415bf2bb7e7",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
