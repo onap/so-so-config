@@ -23,6 +23,8 @@ ruby_block 'replace_consumer_group_in_asdc_json' do
            
             if "#{config_name}" == "consumerGroup" or "#{config_name}" == "consumerId" 
                 asdc_client_configs[config_name] = "#{config_value}-#{node.chef_environment}#{node['hostname'][-1]}"
+	    elsif config_value.class == Array or config_value.class == Chef::Node::ImmutableArray
+		asdc_client_configs[config_name] = config_value
             else 
                 asdc_client_configs[config_name] = "#{config_value}"
             end
