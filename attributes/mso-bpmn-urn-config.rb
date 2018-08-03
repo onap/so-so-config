@@ -67,22 +67,23 @@ node.default["mso-bpmn-urn-config"]["workflowL3ToHigherLayerAddBondingModelVersi
 #
 # Lookup order (precedence): flow+resource specific (1st) -> flow-specific version -> resource-specific version -> default version (last)
 ########################################################################################################################################################################################################
-node.default["mso-bpmn-urn-config"]["workflowGlobalDefaultAAIVersion"] = "11"
+node.default["mso-bpmn-urn-config"]["workflowGlobalDefaultAAIVersion"] = "14"
 node.default["mso-bpmn-urn-config"]["workflowGlobalDefaultAAINamespace"] = "http://org.openecomp.aai.inventory/"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11GenericVnfUri"] = "/aai/v11/network/generic-vnfs/generic-vnf"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11VpnBindingUri"] = "/aai/v11/network/vpn-bindings/vpn-binding"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11VceUri"] = "/aai/v11/network/vces/vce"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11L3NetworkUri"] = "/aai/v11/network/l3-networks/l3-network"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11CustomerUri"] = "/aai/v11/business/customers/customer"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11NetworkPolicyUri"] = "/aai/v11/network/network-policies/network-policy"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11RouteTableReferenceUri"] = "/aai/v11/network/route-table-references/route-table-reference"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11TenantUri"] = "/aai/v11/cloud-infrastructure/cloud-regions/cloud-region/CloudOwner/DFW/tenants/tenant"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11GenericQueryUri"] = "/aai/v11/search/generic-query"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV14GenericVnfUri"] = "/aai/v14/network/generic-vnfs/generic-vnf"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV14VpnBindingUri"] = "/aai/v14/network/vpn-bindings/vpn-binding"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV14VceUri"] = "/aai/v14/network/vces/vce"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV14L3NetworkUri"] = "/aai/v14/network/l3-networks/l3-network"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV14CustomerUri"] = "/aai/v14/business/customers/customer"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV14NetworkPolicyUri"] = "/aai/v14/network/network-policies/network-policy"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV14RouteTableReferenceUri"] = "/aai/v14/network/route-table-references/route-table-reference"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV14TenantUri"] = "/aai/v14/cloud-infrastructure/cloud-regions/cloud-region/CloudOwner/DFW/tenants/tenant"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV14GenericQueryUri"] = "/aai/v14/search/generic-query"
 #note the CloudRegionURI is used for volume-groups
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11CloudRegionUri"] = "/aai/v11/cloud-infrastructure/cloud-regions/cloud-region/CloudOwner"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11NodesQueryUri"] = "/aai/v11/search/nodes-query"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11GenericVnfUri"] = "/aai/v11/network/generic-vnfs/generic-vnf"
-node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV11CloudRegionUri"] = "/aai/v11/cloud-infrastructure/cloud-regions/cloud-region/CloudOwner"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV14CloudRegionUri"] = "/aai/v14/cloud-infrastructure/cloud-regions/cloud-region/CloudOwner"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV14NodesQueryUri"] = "/aai/v14/search/nodes-query"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV14GenericVnfUri"] = "/aai/v14/network/generic-vnfs/generic-vnf"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV14CloudRegionUri"] = "/aai/v14/cloud-infrastructure/cloud-regions/cloud-region/CloudOwner"
+node.default["mso-bpmn-urn-config"]["workflowDefaultAAIV14SPPartnerUri"] = "/aai/v14/business/sp-partners/sp-partner"
 
 ##########
 # DEBUG defaults
