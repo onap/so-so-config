@@ -181,3 +181,7 @@ node.default["mso-bpmn-urn-config"]["logDebugDHVCreateService"] = node["mso-bpmn
 node.default["mso-bpmn-urn-config"]["logDebugDHVActivateService"] = node["mso-bpmn-urn-config"]["debug"]
 node.default["mso-bpmn-urn-config"]["logDebugSNIROAdapter"] = node["mso-bpmn-urn-config"]["debug"]
 node.default["mso-bpmn-urn-config"]["logDebugOofAdapter"] = node["mso-bpmn-urn-config"]["debug"]
+node.default["mso-bpmn-urn-config"]["logDebugCreate3rdONAPE2EServiceInstance"] = node["mso-bpmn-urn-config"]["debug"]
+node.default["mso-bpmn-urn-config"]["logDebugDelete3rdONAPE2EServiceInstance"] = node["mso-bpmn-urn-config"]["debug"]
+node.default["mso-bpmn-urn-config"]["logDebugCreateDeviceResource"] = node["mso-bpmn-urn-config"]["debug"]
+node.default["mso-bpmn-urn-config"]["logDebugDeleteDeviceResource"] = node["mso-bpmn-urn-config"]["debug"]
